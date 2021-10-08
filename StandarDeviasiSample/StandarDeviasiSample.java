@@ -43,11 +43,8 @@ public class StandarDeviasiSample {
             kuadrat += (kurang * kurang);
         }
 
-        // Perhitungan variansi
-        double variansi = kuadrat / (size - 1);
-
         // Perhitungan deviasi
-        double deviasi = Math.sqrt(variansi);
+        double deviasi = Math.sqrt(kuadrat / (size - 1));
 
         // Cetak hasil
         System.out.format("Standar deviasi sample: %.2f", deviasi);
